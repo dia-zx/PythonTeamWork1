@@ -2,7 +2,7 @@
 
 # функция записи базы данных в файл
 # dic - словарь записей баз данных dic ~ {ID : [Surname, Name, MiddleName, BirthDay, EMail, Telephone, Job, Note]}
-def Save(dic):
+def Save(dic : dict):
     None
 
 # функция загрузки базы данных из файла
