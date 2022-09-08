@@ -7,6 +7,7 @@ def DrawMenu(CommandList : list):
     None
 
 # Вывод строк данных (items) БД в виде таблицы
+#-----------------------------------------------------------------------------------
 #   ID : Surname | Name | MiddleName | BirthDay | EMail | Telephone | Job | Note| 
 #   1    kjjkjk  | fhgf | iuhyiu     | yutuyt   
 #   2    kjjkjk  | fhgf | iuhyiu     | yutuyt
