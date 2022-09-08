@@ -8,10 +8,10 @@ def DrawMenu(CommandList : list):
 
 # Вывод строк данных (items) БД в виде таблицы
 #-----------------------------------------------------------------------------------
-#   ID : Surname | Name | MiddleName | BirthDay | EMail | Telephone | Job | Note| 
-#   1    kjjkjk  | fhgf | iuhyiu     | yutuyt   
-#   2    kjjkjk  | fhgf | iuhyiu     | yutuyt
-#   3    kjjkjk  | fhgf | iuhyiu     | yutuyt
+#   ID : Surname | Name | MiddleName | BirthDay    | EMail      | Telephone | Job           | Note      | 
+#   1    Иванов  | Иван | Петрович   | 10.10.2010  |апа@fgd.net |+7908885751|программист    | холостой) |
+#   1    Петров  | Иван | Петрович   | 10.10.2010  |апа@fgd.net |+7908885751|программист    | с юмором  |
+#   1    Сидоров | Иван | Петрович   | 10.10.2010  |апа@fgd.net |+7908885751|программист    | женат     |
 def DrawItems(items : dict):
     None
 
