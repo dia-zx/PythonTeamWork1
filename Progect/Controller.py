@@ -12,7 +12,7 @@ def Start():
     Model.Init(FileIO.Load())
     while(True):
         View.ClearScreen()
-        View.DrawItems(Filter)
+        View.DrawItems(Model.GetItems(Filter))
         View.DrawMenu(["1 Добавить", "2 Удалить", "3 Фильтр", "4 Сохранить", "5 Загрузить", "0 Выход"])
         input = View.InputString("Введите действие:")
         None

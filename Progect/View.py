@@ -7,6 +7,10 @@ def DrawMenu(CommandList : list):
     None
 
 # Вывод строк данных (items) БД в виде таблицы
+#   ID : Surname | Name | MiddleName | BirthDay | EMail | Telephone | Job | Note| 
+#   1    kjjkjk  | fhgf | iuhyiu     | yutuyt   
+#   2    kjjkjk  | fhgf | iuhyiu     | yutuyt
+#   3    kjjkjk  | fhgf | iuhyiu     | yutuyt
 def DrawItems(items : dict):
     None
 
@@ -20,3 +24,5 @@ def InputString(prompt : str):
 # Функция очистки экрана
 def ClearScreen():
     None
+    
+    
