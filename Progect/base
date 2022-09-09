@@ -1,0 +1,3 @@
+{'id': 1, 'surname': 'Фамилия', 'name': 'Имя', 'middlename': 'Отчество', 'birthday': 'День рождения', 'email': 'E-mail', 'telephone': 'Телефон', 'job': 'Должность', 'note': 'Примечание'}
+{'id': 2, 'surname': 'Разоренов', 'name': 'Анатолий', 'middlename': 'Юрьевич', 'birthday': '20.12.1983', 'email': 'molleux@ya.ru', 'telephone': '+79093167842', 'job': 'студент GB', 'note': 'характер нордический'}
+{'id': 3, 'surname': 'qv', 'name': 'creq', 'middlename': 'qv', 'birthday': 'qvrreqv', 'email': 'qwevvr', 'telephone': 'qwev\tvr', 'job': '\tw\tv', 'note': 'erwqrq'}
