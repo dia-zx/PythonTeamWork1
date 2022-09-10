@@ -12,7 +12,7 @@ __Участники:__
 <https://github.com/dia-zx/PythonTeamWork1>
 - Михаил Мансуров - интерфейс ([View.py](Progect/View.py))
 <https://github.com/Mansurov512/PythonTeamWork1>
-- Анатолий Разоренов - операции с файловой системой ([FileIO.py](Progect/FileIO.py)) https://github.com/molleux/PythonTeamWork1/tree/release
+- Анатолий Разоренов - операции с файловой системой ([FileIO.py](Progect/FileIO.py)) https://github.com/molleux/PythonTeamWork1
 
 [план решения](Plan.png)
 ![alt](Plan.png)
