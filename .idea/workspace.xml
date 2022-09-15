@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6c1984c-bccd-4aaa-8825-51c46d40cae5" name="Default Changelist" comment="Исправил return в FileLO. Добавил текстовый файл хранящий id.&#10;Написал функцию &#10;Переписал функцию create_user" />
+    <list default="true" id="a6c1984c-bccd-4aaa-8825-51c46d40cae5" name="Default Changelist" comment="Исправил return в FileLO. Добавил текстовый файл хранящий id.&#10;Написал функцию &#10;Переписал функцию create_user">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
