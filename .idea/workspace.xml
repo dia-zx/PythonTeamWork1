@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6c1984c-bccd-4aaa-8825-51c46d40cae5" name="Default Changelist" comment="Исправил return в FileLO. Добавил текстовый файл хранящий id.&#10;Написал функцию &#10;Переписал функцию create_user">
+    <list default="true" id="a6c1984c-bccd-4aaa-8825-51c46d40cae5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,16 +83,21 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
                   <first_editor relative-caret-position="289">
-                    <caret line="17" selection-start-line="17" selection-end-line="17" />
+                    <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
                   </first_editor>
                   <second_editor />
                 </state>
               </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
         </leaf>
@@ -328,13 +333,20 @@
       <option name="project" value="LOCAL" />
       <updated>1662718273284</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Исправил return в FileLO. Добавил текстовый файл хранящий id.&#10;Написал функцию &#10;Переписал функцию create_user">
+      <created>1663269602910</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663269602910</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12483487" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12483487" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -344,7 +356,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32956153" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3293011" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
@@ -374,7 +386,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Создал свой тестовый файл create_user для отработки выгрузки в base (функция save) и функции load() &#10;!!!!!! убрал заглавные буквы из названий функций - PEP8!!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создал свой тестовый файл create_user для отработки выгрузки в base (функция save) и функции load() &#10;!!!!!! убрал заглавные буквы из названий функций - PEP8!!!!!" />
+    <MESSAGE value="Исправил return в FileLO. Добавил текстовый файл хранящий id.&#10;Написал функцию &#10;Переписал функцию create_user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправил return в FileLO. Добавил текстовый файл хранящий id.&#10;Написал функцию &#10;Переписал функцию create_user" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -478,22 +491,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="289">
-            <caret line="17" selection-start-line="17" selection-end-line="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Progect/Model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="289">
+            <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
