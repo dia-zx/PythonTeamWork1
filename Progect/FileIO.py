@@ -2,12 +2,14 @@
 
 # функция записи базы данных в файл
 # dic - словарь записей баз данных dic ~ {ID : [Surname, Name, MiddleName, BirthDay, EMail, Telephone, Job, Note]}
-import create_user
+from create_user import create_user
+
 
 def save():
     with open('base', 'a', encoding='utf-8') as f:
-        f.write(create_user.create_user())
-    return create_user.create_user()
+        f.write(create_user())
+
+    return 'All right'
 
 # функция загрузки базы данных из файла
 def load():
@@ -16,8 +18,9 @@ def load():
     return load_base
 
 
-print(save())
+save()
 print(load())
+
 
 # diction = {1: ['surname', 'name', 'middlename', 'birthday', 'email', 'telephone', 'job', 'note']}
 # load(diction)

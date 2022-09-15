@@ -1,3 +1,8 @@
 {'id': 1, 'surname': 'Фамилия', 'name': 'Имя', 'middlename': 'Отчество', 'birthday': 'День рождения', 'email': 'E-mail', 'telephone': 'Телефон', 'job': 'Должность', 'note': 'Примечание'}
-{'id': 2, 'surname': 'Разоренов', 'name': 'Анатолий', 'middlename': 'Юрьевич', 'birthday': '20.12.1983', 'email': 'molleux@ya.ru', 'telephone': '+79093167842', 'job': 'студент GB', 'note': 'характер нордический'}
+{'id': 2, 'surname': 'Разоренов', 'name': 'Анатолий', 'middlename': 'Юрьевич', 'birthday': '20.12.1555', 'email': 'molleux@ya.ru', 'telephone': '+79083167842', 'job': 'студент GB', 'note': 'характер нордический'}
 {'id': 3, 'surname': 'qv', 'name': 'creq', 'middlename': 'qv', 'birthday': 'qvrreqv', 'email': 'qwevvr', 'telephone': 'qwev\tvr', 'job': '\tw\tv', 'note': 'erwqrq'}
+{'id': 4, 'surname': 'Петров', 'name': 'Пётр', 'middlename': 'Петрович', 'birthday': '23.01.1956', 'email': 'ctfc@ru.ya', 'telephone': '85642341243', 'job': 'бармен', 'note': 'не женат'}
+{'id': 5, 'surname': 'qevqec', 'name': 'qwcq', 'middlename': 'cqec', 'birthday': 'qewv', 'email': 'qwev', 'telephone': 'qewv', 'job': 'qrev', 'note': 'qrv'}
+{'id': 6, 'surname': 'Сидоров', 'name': 'Сидор', 'middlename': 'Сидорович\t', 'birthday': '25.11.1984', 'email': 'dsvucvgu@ya.ru', 'telephone': '89453672615', 'job': 'официант', 'note': 'предан родине'}
+{'id': 7, 'surname': 'Иванов', 'name': 'Иван', 'middlename': 'bdfyjdbx', 'birthday': '`12 vr2 v23', 'email': 'nfaejini@uio.ru', 'telephone': '13425353t', 'job': 'hjbhibb', 'note': 'eqfv'}
+{'id': 9, 'surname': 'Anatoly', 'name': 'Razorenov', 'middlename': 'Urievich', 'birthday': '32/12/2134', 'email': 'ewev @we.3', 'telephone': '23135351235', 'job': '123rfewqfv ', 'note': 'wefv'}
