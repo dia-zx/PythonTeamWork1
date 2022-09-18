@@ -13,10 +13,10 @@ def GetItems(filter : str):
     filter_items = {}
     if filter == "":
         return Items
-    for key in Items.keys():
-        for item in Items[key]:
-            if item.find(filter) >= 0:
-                filter_items.update({key : Items[key]})
+    for key1 in Items.keys():
+        for key2 in Items[key1]:
+            if Items[key1][key2].find(filter) >= 0:
+                filter_items.update({key1 : Items[key1]})
                 break
     return filter_items
 
@@ -39,13 +39,15 @@ def DeleteItem(id : int):
     return Items.pop(id, None) != None
    
 
-# ms = {1: ["Иванов", "Сергеевич", "+7899"]}
-# ms.update({2: ["Петров", "Иванович", "+7890"]})
-# Init(ms)
+ms = {
+    1: {"Surname" : "Петров", "Name" : "Алексей", "MiddleName" : "Иванович", "BirthDay" : "", "EMail" : "petro@mail.ru", "Telephone" : "+79053284562", "Job" : "слесарь", "Note" : ""},
+    2: {"Surname" : "Сидоров", "Name" : "Юрий", "MiddleName" : "Денисович", "BirthDay" : "06.08.1995", "EMail" : "sid123@list.ru", "Telephone" : "+79056837212", "Job" : "бухгалтер", "Note" : ""},     
+      }
+Init(ms)
 
 # AddItem([10, "sdfdf", "123"])
-# #print(DeleteItem(1))
-# print(GetItems(""))
+print(DeleteItem(1))
+print(GetItems(""))
 
 # # st = "fdzxc"
 # # print(st.find("zxc"))

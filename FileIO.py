@@ -1,7 +1,22 @@
 # Модуль взаимодействия с файловой системой
 
 # функция записи базы данных в файл
-# dic - словарь записей баз данных dic ~ {ID : [Surname, Name, MiddleName, BirthDay, EMail, Telephone, Job, Note]}
+# dic - словарь записей баз данных 
+# dic ~ 
+# {
+    # ID : 
+    # {
+        # "Surname" : "",
+        # "Name" : "" ,
+        # "MiddleName : "",
+        # "BirthDay : "",
+        # "EMail : "",
+        # "Telephone : "",
+        # "Job : "",
+        # "Note : ""
+    # }
+    # ...
+# }
 
 import create_user
 
@@ -21,7 +36,5 @@ def load():
 print(save())
 print(load())
 
-# diction = {1: ['surname', 'name', 'middlename', 'birthday', 'email', 'telephone', 'job', 'note']}
-# load(diction)
-# print(load(*diction[1]))
+
 
