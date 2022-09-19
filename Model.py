@@ -22,15 +22,15 @@ def GetItems(filter : str):
 
 
 # Добавление записи в словарь (если ID == 0) иначе изменение существующей
-def AddItem(ls : list):
-    NewID = ls[0]
-    if ls[0] == 0:
-        NewID = 0
+def AddItem(dic : dict):
+    NewID = dic.keys()[0]
+    if NewID == 0:
+        NewID = 1
         while True:
             if NewID not in Items.keys():
                 break
             NewID += 1
-    Items.update({NewID : ls[1:]})
+    Items.update({NewID : dic.values()})
             
     
 
