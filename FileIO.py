@@ -33,8 +33,6 @@ def load():
     return load_base
 
 
-print(save())
-print(load())
 
 
 
