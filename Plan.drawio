@@ -1,11 +1,11 @@
 <mxfile host="65bd71144e">
     <diagram id="d1onOI0jFkcU-A59MVnD" name="Page-1">
-        <mxGraphModel dx="375" dy="560" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="869" dy="497" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="90" value="" style="rounded=0;shadow=0;glass=0;labelBackgroundColor=none;labelBorderColor=none;sketch=0;fontColor=none;strokeColor=#000000;fillColor=none;noLabel=1;" parent="1" vertex="1">
-                    <mxGeometry x="9" y="41" width="993" height="766" as="geometry"/>
+                    <mxGeometry x="9" y="41" width="993" height="779" as="geometry"/>
                 </mxCell>
                 <mxCell id="14" value="Модель записи в информационной системе" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fontStyle=1;align=center;pointerEvents=1;" parent="1" vertex="1">
                     <mxGeometry x="30" y="50" width="450" height="230" as="geometry"/>
@@ -198,7 +198,7 @@
                 <mxCell id="68" value="&lt;font&gt;- Save( items : dict )&lt;br&gt;сохранение базы в файле.&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontColor=#000033;strokeColor=#000000;fillColor=#FFFFCC;" parent="60" vertex="1">
                     <mxGeometry x="10" y="60" width="220" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="69" value="&lt;font&gt;- items : dict Load( )&lt;br&gt;загрузузка базы из файла&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontColor=#000033;strokeColor=#000000;fillColor=#FFFFCC;" parent="60" vertex="1">
+                <mxCell id="69" value="&lt;font&gt;- Load( ) -&amp;gt; dict&lt;br&gt;загрузузка базы из файла&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontColor=#000033;strokeColor=#000000;fillColor=#FFFFCC;" parent="60" vertex="1">
                     <mxGeometry x="10" y="130" width="220" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="62" style="edgeStyle=none;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FFFFFF;strokeColor=#000000;" parent="1" source="61" target="60" edge="1">
@@ -225,7 +225,7 @@
                 <mxCell id="77" value="&lt;font&gt;- DrawItems( items : dict&lt;/font&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;font&gt;)&lt;br&gt;отрисовка списка&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontColor=#000033;strokeColor=#000000;fillColor=#FFFFCC;" parent="65" vertex="1">
                     <mxGeometry x="10" y="130" width="230" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="78" value="&lt;font&gt;- str Input( prompt : str&lt;/font&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;font&gt;)&lt;br&gt;пользовательский ввод&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontColor=#000033;strokeColor=#000000;fillColor=#FFFFCC;" parent="65" vertex="1">
+                <mxCell id="78" value="&lt;font&gt;- Input( prompt : str&lt;/font&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;font&gt;) -&amp;gt; str&lt;br&gt;пользовательский ввод&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontColor=#000033;strokeColor=#000000;fillColor=#FFFFCC;" parent="65" vertex="1">
                     <mxGeometry x="10" y="200" width="230" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="94" value="&lt;font&gt;- ClearScreen( &lt;/font&gt;&lt;font&gt;)&lt;br&gt;очистка экрана&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontColor=#000033;strokeColor=#000000;fillColor=#FFFFCC;" parent="65" vertex="1">
@@ -234,17 +234,23 @@
                 <mxCell id="73" value="Model.py&#10;функционал информац. системы" style="swimlane;fontColor=#FF3399;strokeColor=#000000;startSize=50;perimeterSpacing=1;fillColor=#FFE6CC;" parent="1" vertex="1">
                     <mxGeometry x="563" y="453" width="320" height="349" as="geometry"/>
                 </mxCell>
-                <mxCell id="74" value="&lt;font&gt;- items : dict&lt;/font&gt;&lt;font&gt;&amp;nbsp;GetItems( filter : str&lt;/font&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;font&gt;)&lt;br&gt;возврат списка записей, удовлетворяющих фильтру&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontColor=#000033;strokeColor=#000000;fillColor=#FFFFCC;" parent="73" vertex="1">
-                    <mxGeometry x="10" y="135" width="300" height="60" as="geometry"/>
+                <mxCell id="74" value="&lt;font&gt;- GetItems( filter : str&lt;/font&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;font&gt;) -&amp;gt; dict&lt;br&gt;возвращает словарь записей, удовлетворяющих фильтру&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontColor=#000033;strokeColor=#000000;fillColor=#FFFFCC;" parent="73" vertex="1">
+                    <mxGeometry x="10" y="106" width="300" height="39" as="geometry"/>
                 </mxCell>
                 <mxCell id="79" value="&lt;font&gt;- Add&lt;/font&gt;&lt;font&gt;Item(&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;&quot;&gt;[ID, ... Note]&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;font&gt;)&lt;br&gt;добавление / изменение записи&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontColor=#000033;strokeColor=#000000;fillColor=#FFFFCC;" parent="73" vertex="1">
-                    <mxGeometry x="10" y="203" width="300" height="60" as="geometry"/>
+                    <mxGeometry x="10" y="150" width="300" height="34" as="geometry"/>
                 </mxCell>
-                <mxCell id="80" value="&lt;font&gt;- bool Delete&lt;/font&gt;&lt;font&gt;Item(&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;&quot;&gt;ID&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;font&gt;)&lt;br&gt;удаление записи (return true - OK)&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontColor=#000033;strokeColor=#000000;fillColor=#FFFFCC;" parent="73" vertex="1">
-                    <mxGeometry x="10" y="270" width="300" height="60" as="geometry"/>
+                <mxCell id="80" value="&lt;font&gt;- Delete&lt;/font&gt;&lt;font&gt;Item(&amp;nbsp;&lt;/font&gt;&lt;span&gt;ID&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;font&gt;) -&amp;gt; bool&lt;br&gt;удаление записи (return true - OK)&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontColor=#000033;strokeColor=#000000;fillColor=#FFFFCC;" parent="73" vertex="1">
+                    <mxGeometry x="10" y="190" width="300" height="32" as="geometry"/>
                 </mxCell>
-                <mxCell id="95" value="&lt;font&gt;- Init&lt;/font&gt;&lt;font&gt;( items : dict&lt;/font&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;font&gt;)&lt;br&gt;инициализация БД системы&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontColor=#000033;strokeColor=#000000;fillColor=#FFFFCC;" vertex="1" parent="73">
-                    <mxGeometry x="10" y="62" width="300" height="60" as="geometry"/>
+                <mxCell id="95" value="&lt;font&gt;- Init&lt;/font&gt;&lt;font&gt;( items : dict&lt;/font&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;font&gt;)&lt;br&gt;инициализация БД системы&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontColor=#000033;strokeColor=#000000;fillColor=#FFFFCC;" parent="73" vertex="1">
+                    <mxGeometry x="10" y="62" width="300" height="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="&lt;font&gt;- GetEmptyItem() -&amp;gt; dict&lt;br&gt;&lt;/font&gt;&lt;font&gt;формирование пустой записи&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontColor=#000033;strokeColor=#000000;fillColor=#FFFFCC;" vertex="1" parent="73">
+                    <mxGeometry x="10" y="228" width="300" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="&lt;font&gt;- CheckID(ID : int) -&amp;gt; bool&lt;br&gt;&lt;/font&gt;&lt;font&gt;проверка существования записи&amp;nbsp; с заданным ID&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontColor=#000033;strokeColor=#000000;fillColor=#FFFFCC;" vertex="1" parent="73">
+                    <mxGeometry x="10" y="269" width="300" height="35" as="geometry"/>
                 </mxCell>
                 <mxCell id="84" value="Controller.py&#10;общая интеграция модулей" style="swimlane;fontColor=#FF3399;strokeColor=#000000;startSize=50;perimeterSpacing=1;labelBackgroundColor=none;fillColor=#FFE6CC;" parent="1" vertex="1">
                     <mxGeometry x="670" y="280" width="320" height="140" as="geometry"/>
