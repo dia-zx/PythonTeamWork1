@@ -66,7 +66,7 @@ def Start():
             FileIO.save(Model.GetItems(""))
             continue
 
-        # **************** Сохранить ****************
+        # **************** Загрузить ****************
         if input == "6":
-            Model.Init(FileIO.Load())
+            Model.Init(FileIO.load())
             continue

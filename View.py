@@ -1,10 +1,13 @@
 # модуль интерфейса взаимодействия с пользователем
 
+from os import system
+
 
 # Функция отрисовки меню
 # CommandList - список команд меню ["1 - Фильтр", "2 - Удалить", "3 - Добавить", "4 - Редактировать", ...]
 def DrawMenu(CommandList: list):
-
+    print(CommandList)
+    print("")
 
 
 # Вывод строк данных (items) БД в виде таблицы
@@ -15,15 +18,59 @@ def DrawMenu(CommandList: list):
 # ║ 2  ║      Сидоров       ║      Юрий     ║     Денисович      ║ 06.08.1995 ║ sid123@list.ru║ +79056837212 ║   бухгалтер   ║                         ║
 # ╚════╩════════════════════╩═══════════════╩════════════════════╩════════════╩═══════════════╩══════════════╩═══════════════╩═════════════════════════╝
 def DrawItems(items: dict, filter: str):
+    ColumnWidth = [4, 20, 15, 20, 12, 15, 14, 15, 25]
+    ColumnsTitle = ["ID", "Фамилия", "Имя", "Отчество",
+                    "д. рожд.", "Email", "Телефон", "Профессия", "Заметки"]
+    # ****************** Заголовок таблицы **********************
+    st = ""
+    for it in ColumnWidth:
+        st += "╦" + "═"*it
+    st = "╔" + st[1:]
+    st += "╗"
+    print(st)
 
+    st = ""
+    for i in range(len(ColumnsTitle)):
+        st += "║" + ColumnsTitle[i].center(ColumnWidth[i], " ")
+    st += "║"
+    print(st)
+
+    st = ""
+    for it in ColumnWidth:
+        st += "╬" + "═"*it
+    st = "╠" + st[1:]
+    st += "╣"
+    print(st)
+
+    # ***************** Записи БД *****************************
+    for key in items.keys():
+        st = "║" + str(key).center(ColumnWidth[0])
+        i = 1
+        for key2 in items[key].keys():
+            st += "║" + items[key][key2].center(ColumnWidth[i], " ")
+            i += 1
+        st += "║"
+        print(st)
+
+    # ***************** Нижняя строка таблицы   *****************
+    st = ""
+    for it in ColumnWidth:
+        st += "╩" + "═"*it
+    st = "╚" + st[1:]
+    st += "╝"
+    print(st)
+
+    if filter != "":
+        print(f"Действует фильтр вывода: {filter}")
 
 
 # Пользовательский ввод
 # Возвращает строку текста, введенную пользователем
 # prompt - строка текста, поясняющая ввод
 def InputString(prompt: str):
-
+    return input(prompt)
 
 
 # Функция очистки экрана
 def ClearScreen():
+    system('cls||clear')
