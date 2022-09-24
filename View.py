@@ -74,3 +74,4 @@ def InputString(prompt: str):
 # Функция очистки экрана
 def ClearScreen():
     system('cls||clear')
+    print()
