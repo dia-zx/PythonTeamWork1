@@ -18,30 +18,30 @@ def Start():
         View.DrawItems(Model.GetItems(Model.Filter), Model.Filter)
         View.DrawMenu(["1 Добавить", "2 Редактировать", "3 Удалить",
                       "4 Фильтр", "5 Сохранить", "6 Загрузить", "0 Выход"])
-        input = View.InputString("Введите действие: ")
+        user_input = View.InputString("Введите действие: ")
 
         # ******* Выход **************
-        if input == "0":
+        if user_input == "0":
             print("Работа с БД завершена!")
             break
 
         # ********* Удаление ***********
-        if input == "3":
-            input = View.InputString("Введите ID: ")
-            res = Model.DeleteItem(int(input))
+        if user_input == "3":
+            user_input = View.InputString("Введите ID: ")
+            res = Model.DeleteItem(int(user_input))
             if not res:
                 View.InputString(
                     "Ошибка. Введен неверный ID! Нажмите <Enter>:")
             continue
 
         # **************** Фильтр ****************
-        if input == "4":
-            input = View.InputString("Введите значение фильтра: ")
-            Model.Filter = input
+        if user_input == "4":
+            user_input = View.InputString("Введите значение фильтра: ")
+            Model.Filter = user_input
             continue
 
         # **************** Добавить ****************
-        if input == "1":
+        if user_input == "1":
             newrecord = Model.GetEmptyItem()
             for key in newrecord[0].keys():
                 newrecord[0][key] = View.InputString(newrecord[0][key] + ": ")
@@ -49,7 +49,7 @@ def Start():
             continue
 
         # **************** Редактировать ****************
-        if input == "2":
+        if user_input == "2":
             id = int(View.InputString("Введите ID записи для редактирования: "))
             if Model.CheckID(id) == False:
                 View.InputString(
@@ -62,11 +62,11 @@ def Start():
             continue
 
         # **************** Сохранить ****************
-        if input == "5":
+        if user_input == "5":
             FileIO.save(Model.GetItems(""))
             continue
 
         # **************** Загрузить ****************
-        if input == "6":
+        if user_input == "6":
             Model.Init(FileIO.load())
             continue
