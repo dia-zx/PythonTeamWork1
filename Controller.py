@@ -36,8 +36,7 @@ def Start():
 
         # **************** Фильтр ****************
         if user_input == "4":
-            user_input = View.InputString("Введите значение фильтра: ")
-            Model.Filter = user_input
+            Model.Filter = View.InputString("Введите значение фильтра: ")
             continue
 
         # **************** Добавить ****************
