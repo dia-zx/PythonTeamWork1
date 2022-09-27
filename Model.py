@@ -28,16 +28,15 @@ def GetItems(filter: str):
 
 def AddItem(dic: dict):
     """ Добавление записи в словарь (если ID == 0) иначе изменение существующей """
-
-    NewID = list(dic.keys())[0]
-    data = dic[NewID]
-    if NewID == 0:
-        NewID = 1
+    new_id = list(dic.keys())[0]
+    data = dic[new_id]
+    if new_id == 0:
+        new_id = 1
         while True:
-            if NewID not in Items.keys():
+            if new_id not in Items.keys():
                 break
-            NewID += 1
-    Items.update({NewID: data})
+            new_id += 1
+    Items.update({new_id: data})
 
 
 #

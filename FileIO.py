@@ -49,11 +49,3 @@ def load() -> dict:
                 dic2[key_id2] = value
             dic[key_id] = dic2
     return dic
-
-
-# ms = {
-#         1: {"Surname": "Петров", "Name": "Алексей", "MiddleName": "Иванович", "BirthDay": "", "EMail": "petro@mail.ru", "Telephone": "+79053284562", "Job": "слесарь", "Note": ""},
-#         2: {"Surname": "Сидоров", "Name": "Юрий", "MiddleName": "Денисович", "BirthDay": "06.08.1995", "EMail": "sid123@list.ru", "Telephone": "+79056837212", "Job": "бухгалтер", "Note": ""},
-#     }
-# save(ms)
-# print(load())

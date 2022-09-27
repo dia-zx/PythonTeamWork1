@@ -6,11 +6,7 @@ import View
 
 
 # основной циклический метод
-
-
 def Start():
-
-    FileIO.load()
     Model.Init(FileIO.load())
 
     while True:
@@ -44,7 +40,6 @@ def Start():
             newrecord = Model.GetEmptyItem()
             for key in newrecord[0].keys():
                 newrecord[0][key] = View.InputString(newrecord[0][key] + ": ")
-                print(newrecord[0][key])
             Model.AddItem(newrecord)
             continue
 
