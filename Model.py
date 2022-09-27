@@ -54,6 +54,6 @@ def GetEmptyItem() -> dict:
 
 
 
-def CheckID(id: int):
+def CheckID(id: int) -> bool:
     """ Проверка на существование записи с указанным ID."""
     return id in Items.keys()
