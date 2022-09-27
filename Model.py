@@ -5,14 +5,16 @@ global Filter
 Filter = ""
 
 
-# инициализация БД (словаря)
+#
 def Init(items: dict):
+    """ инициализация БД (словаря) """
     global Items
     Items = items.copy()
 
 
-# возврат списка записей (словарь) удовлетворяющих фильтру
+#
 def GetItems(filter: str):
+    """ Возврат списка записей (словарь) удовлетворяющих фильтру. """
     filter_items = {}
     if filter == "":
         return Items
@@ -24,8 +26,9 @@ def GetItems(filter: str):
     return filter_items
 
 
-# Добавление записи в словарь (если ID == 0) иначе изменение существующей
 def AddItem(dic: dict):
+    """ Добавление записи в словарь (если ID == 0) иначе изменение существующей """
+
     NewID = list(dic.keys())[0]
     data = dic[NewID]
     if NewID == 0:
@@ -37,16 +40,21 @@ def AddItem(dic: dict):
     Items.update({NewID: data})
 
 
-# Удаление записи по ID
+#
 def DeleteItem(id: int):
+    """Удаление записи по ID"""
     return Items.pop(id, None) != None
 
 
-# Возвращает пустую запись БД
+#
 def GetEmptyItem() -> dict:
-    return {0: {"Surname": "Фамилия", "Name": "Имя", "MiddleName": "Отчество", "BirthDay": "День рождения", "EMail": "Email", "Telephone": "Телефон", "Job": "Профессия", "Note": "Заметки"}}
+    """Возвращает пустую запись БД."""
+    return {0: {"Surname": "Фамилия", "Name": "Имя", "MiddleName": "Отчество",
+                "BirthDay": "День рождения", "EMail": "Email",
+                "Telephone": "Телефон", "Job": "Профессия", "Note": "Заметки"}}
 
 
-# проверка на существование записи с указанным ID
+
 def CheckID(id: int):
+    """ Проверка на существование записи с указанным ID."""
     return id in Items.keys()

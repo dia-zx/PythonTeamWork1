@@ -1,4 +1,4 @@
-2
+4
 1
 8
 Surname
@@ -35,3 +35,39 @@ Job
 бухгалтер
 Note
 
+3
+8
+Surname
+Чапаев
+Name
+Иван
+MiddleName
+Васильевич
+BirthDay
+09.02.1887
+EMail
+niuni@ya.ru
+Telephone
+89762345261
+Job
+Кавалерист
+Note
+Любит лошадей
+4
+8
+Surname
+Сталин
+Name
+Иосиф
+MiddleName
+Виссарионович
+BirthDay
+21.12.1879
+EMail
+sddsd@ya.ru
+Telephone
++79164325634
+Job
+вождь
+Note
+авторитарный
