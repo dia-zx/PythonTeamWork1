@@ -6,14 +6,14 @@ import View
 
 
 # основной циклический метод
+
+
 def Start():
-   # Model.Init(FileIO.Load())
-    ms = {
-        1: {"Surname": "Петров", "Name": "Алексей", "MiddleName": "Иванович", "BirthDay": "", "EMail": "petro@mail.ru", "Telephone": "+79053284562", "Job": "слесарь", "Note": ""},
-        2: {"Surname": "Сидоров", "Name": "Юрий", "MiddleName": "Денисович", "BirthDay": "06.08.1995", "EMail": "sid123@list.ru", "Telephone": "+79056837212", "Job": "бухгалтер", "Note": ""},
-    }
-    Model.Init(ms)
-    while (True):
+
+    FileIO.load()
+    Model.Init(FileIO.load())
+
+    while True:
         View.ClearScreen()
         View.DrawItems(Model.GetItems(Model.Filter), Model.Filter)
         View.DrawMenu(["1 Добавить", "2 Редактировать", "3 Удалить",
@@ -44,6 +44,7 @@ def Start():
             newrecord = Model.GetEmptyItem()
             for key in newrecord[0].keys():
                 newrecord[0][key] = View.InputString(newrecord[0][key] + ": ")
+                print(newrecord[0][key])
             Model.AddItem(newrecord)
             continue
 
