@@ -1,12 +1,14 @@
-def get_num():
-    id = ''
-    while type(id) != int:
-        try:
-            id = int(input('input ID: '))
-        except:
-            print('Введите целое число')
+""" Функция получения возрастающего на 1 числа из файла"""
 
-    return id
+
+def num_from_id():
+    with open('id', 'r', encoding='utf-8') as f:
+        num_id = f.read()
+        num_id = int(num_id) + 1
+        num_id = str(num_id)
+    with open('id', 'w', encoding='utf-8') as f:
+        f.write(num_id)
+    return int(num_id)
 
 
 def create_user():
@@ -14,7 +16,7 @@ def create_user():
     user_data = {}
     for column in range(len(columns)):
         if column == 0:
-            id = get_num()
+            id = num_from_id()
             user_data[columns[0]] = id
         else:
             cell = input(f'input {columns[column]}: ')
