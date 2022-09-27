@@ -5,10 +5,9 @@ import Model
 import View
 
 
-# основной циклический метод
 def Start():
-    Model.Init(FileIO.load())
-
+    """основной циклический метод"""    
+    Model.Init(FileIO.load())    
     while True:
         View.ClearScreen()
         View.DrawItems(Model.GetItems(Model.Filter), Model.Filter)
